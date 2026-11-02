@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{border-bottom:1px solid #262c3a;padding-bottom:8px;text-transform:none;letter-spacing:.04em;font-size:14px}
 .card{background:transparent;border:0;border-top:1px solid #262c3a;border-radius:0;padding:16px 0 0}
 body::before{content:'';display:block;height:5px;background:#94a3b8;position:sticky;top:0;z-index:9}
-background-image:repeating-linear-gradient(0deg, transparent 0 39px, #262c3a 39px 40px);
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, transparent 0 39px, #262c3a 39px 40px)}
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #262c3a 39p
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>我大部分时间在做跨模态引用核对相关的事。</p>
+  <p>我大部分时间在做跨模态引用核对相关的事。 当前以博士阶段研究角色的方式推进项目。</p>
   <ul class="traits">
     <li>先讲为什么不用更简单的方案。</li>
     <li>每个决策都标出放弃了什么。</li>
@@ -89,12 +89,20 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #262c3a 39p
   <div class="grid two">
     <article class="card">
       <h3>在跨模态引用核对上的判定边界与失效条件</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>跨模态引用核对的判定依据与复核方式</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>跨模态引用核对里容易误判的情形与反例</h3>
+      <span class="status">持续跟进</span>
+    </article>
+    <article class="card">
+      <h3>在推进的问题</h3>
+      <p>（跨模态引用核对场景）在跨模态引用核对上，判定从哪个条件开始失效？用结构与协议校验定位失效边界，并给出可复现的判别规则。</p>
+      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -102,6 +110,9 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #262c3a 39p
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
+    <li><div class="name"><a href="https://github.com/gdextenser/schema_reproducible_pipeline_02f3dff2" rel="noopener">schema_reproducible_pipeline_02f3dff2</a></div>
+      <div class="desc">（跨模态引用核对场景）在跨模态引用核对上，判定从哪个条件开始失效？用结构与协议校验定位失效边界，并给出可复现的判别规则。</div>
+    </li>
     <li><div class="name"><a href="https://github.com/gdextenser/xmodalcite" rel="noopener">xmodalcite</a></div>
       <div class="desc">把文本断言与图像区域对应，标出引用错位</div>
     </li>
